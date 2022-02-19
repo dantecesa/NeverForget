@@ -12,7 +12,7 @@ struct UserDetailView: View {
     @Environment(\.dismiss) var dismiss
     @State private var showDeleteConfirmation: Bool = false
     
-    @StateObject var viewModel: PersonViewModel
+    @EnvironmentObject var viewModel: PersonViewModel
     
     var person: Person
     
@@ -94,7 +94,7 @@ struct UserDetailView: View {
             Text("This action cannot be undone.")
         }
         .sheet(isPresented: $showEditSheet) {
-            EditPersonSheet(withViewModel: viewModel, andPerson: person)
+            EditPersonSheet(person: person)
         }
         .sheet(isPresented: $showMapSheet) {
             MapView(latitude: person.latitude, longitude: person.longitude)

@@ -11,7 +11,7 @@ struct EditPersonSheet: View {
     @Environment(\.managedObjectContext) var moc
     @Environment(\.dismiss) var dismiss
     
-    var viewModel: PersonViewModel
+    @EnvironmentObject var viewModel: PersonViewModel
     
     @State var person: Person
     @State private var name: String
@@ -21,8 +21,7 @@ struct EditPersonSheet: View {
     
     @State private var showingAddImageSheet: Bool = false
     
-    init(withViewModel: PersonViewModel, andPerson person: Person) {
-        self.viewModel = withViewModel
+    init(person: Person) {
         _person = State(wrappedValue: person)
         
         _name = State(wrappedValue: person.wrappedName)

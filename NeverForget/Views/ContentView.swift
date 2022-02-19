@@ -9,7 +9,7 @@ import SwiftUI
 
 struct ContentView: View {
     @Environment(\.managedObjectContext) var moc
-    @ObservedObject var viewModel: PersonViewModel = PersonViewModel()
+    @StateObject var viewModel: PersonViewModel = PersonViewModel()
     @FetchRequest(sortDescriptors: [
         SortDescriptor(\.name)
     ]) var people: FetchedResults<Person>
@@ -21,7 +21,7 @@ struct ContentView: View {
             List {
                 ForEach(people, id:\.self) { person in
                     NavigationLink(destination: {
-                        UserDetailView(viewModel: viewModel, person: person)
+                        UserDetailView(person: person)
                     }, label: {
                         HStack {
                             viewModel.loadImage(forPerson: person)
@@ -59,8 +59,9 @@ struct ContentView: View {
             .navigationTitle("NeverForget")
         }
         .sheet(isPresented: $showAddSheet) {
-            AddPersonSheet(viewModel: viewModel)
+            AddPersonSheet()
         }
+        .environmentObject(viewModel)
         .preferredColorScheme(.dark)
     }
     

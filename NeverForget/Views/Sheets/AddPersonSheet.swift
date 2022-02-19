@@ -11,7 +11,7 @@ struct AddPersonSheet: View {
     @Environment(\.managedObjectContext) var moc
     @Environment(\.dismiss) var dismiss
     
-    var viewModel: PersonViewModel
+    @EnvironmentObject var viewModel: PersonViewModel
     
     @State private var name: String = ""
     @State private var image: UIImage?
