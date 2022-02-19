@@ -1,0 +1,465 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6B3B62C227C07D06007960E5 /* EditPersonSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B3B62C127C07D06007960E5 /* EditPersonSheet.swift */; };
+		6B3B62C427C07DE0007960E5 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B3B62C327C07DE0007960E5 /* MapView.swift */; };
+		6B3B62C627C081A3007960E5 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B3B62C527C081A3007960E5 /* Location.swift */; };
+		6B4921BB27BF148300FF9BD0 /* PeopleDataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 6B4921B927BF148300FF9BD0 /* PeopleDataModel.xcdatamodeld */; };
+		6B4921BE27BF14B100FF9BD0 /* Person+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B4921BC27BF14B100FF9BD0 /* Person+CoreDataClass.swift */; };
+		6B6AAB8027BF0DC4000AA161 /* NeverForgetApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B6AAB7F27BF0DC4000AA161 /* NeverForgetApp.swift */; };
+		6B6AAB8227BF0DC4000AA161 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B6AAB8127BF0DC4000AA161 /* ContentView.swift */; };
+		6B6AAB8427BF0DC5000AA161 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6B6AAB8327BF0DC5000AA161 /* Assets.xcassets */; };
+		6B6AAB8727BF0DC5000AA161 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6B6AAB8627BF0DC5000AA161 /* Preview Assets.xcassets */; };
+		6B6AAB9227BF0F8F000AA161 /* AddPersonSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B6AAB9127BF0F8F000AA161 /* AddPersonSheet.swift */; };
+		6BBF6FE127C0BAF2007605AB /* PersonViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BBF6FE027C0BAF2007605AB /* PersonViewModel.swift */; };
+		6BDCFE7627BF15540004F0E2 /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BDCFE7527BF15540004F0E2 /* DataController.swift */; };
+		6BDCFE7A27BF1EBB0004F0E2 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BDCFE7927BF1EBB0004F0E2 /* ImagePicker.swift */; };
+		6BDCFE7C27BF2B840004F0E2 /* FileManager-DocumentsDirectory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BDCFE7B27BF2B840004F0E2 /* FileManager-DocumentsDirectory.swift */; };
+		6BDCFE8027BF2E980004F0E2 /* UserDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BDCFE7F27BF2E980004F0E2 /* UserDetailView.swift */; };
+		6BDCFE8227BF80010004F0E2 /* LocationFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BDCFE8127BF80010004F0E2 /* LocationFetcher.swift */; };
+		6BDCFE8827BF82790004F0E2 /* Person+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BDCFE8627BF82790004F0E2 /* Person+CoreDataProperties.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		6B3B62C127C07D06007960E5 /* EditPersonSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditPersonSheet.swift; sourceTree = "<group>"; };
+		6B3B62C327C07DE0007960E5 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		6B3B62C527C081A3007960E5 /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
+		6B4921BA27BF148300FF9BD0 /* PeopleDataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PeopleDataModel.xcdatamodel; sourceTree = "<group>"; };
+		6B4921BC27BF14B100FF9BD0 /* Person+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Person+CoreDataClass.swift"; sourceTree = "<group>"; };
+		6B6AAB7C27BF0DC4000AA161 /* NeverForget.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NeverForget.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6B6AAB7F27BF0DC4000AA161 /* NeverForgetApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NeverForgetApp.swift; sourceTree = "<group>"; };
+		6B6AAB8127BF0DC4000AA161 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		6B6AAB8327BF0DC5000AA161 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6B6AAB8627BF0DC5000AA161 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		6B6AAB9127BF0F8F000AA161 /* AddPersonSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPersonSheet.swift; sourceTree = "<group>"; };
+		6BBF6FE027C0BAF2007605AB /* PersonViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonViewModel.swift; sourceTree = "<group>"; };
+		6BDCFE7527BF15540004F0E2 /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
+		6BDCFE7927BF1EBB0004F0E2 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
+		6BDCFE7B27BF2B840004F0E2 /* FileManager-DocumentsDirectory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "FileManager-DocumentsDirectory.swift"; sourceTree = "<group>"; };
+		6BDCFE7F27BF2E980004F0E2 /* UserDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailView.swift; sourceTree = "<group>"; };
+		6BDCFE8127BF80010004F0E2 /* LocationFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationFetcher.swift; sourceTree = "<group>"; };
+		6BDCFE8627BF82790004F0E2 /* Person+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Person+CoreDataProperties.swift"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6B6AAB7927BF0DC4000AA161 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6B4921C027BF14B400FF9BD0 /* DataModel */ = {
+			isa = PBXGroup;
+			children = (
+				6BDCFE7527BF15540004F0E2 /* DataController.swift */,
+				6B4921BC27BF14B100FF9BD0 /* Person+CoreDataClass.swift */,
+				6BDCFE8627BF82790004F0E2 /* Person+CoreDataProperties.swift */,
+				6B4921B927BF148300FF9BD0 /* PeopleDataModel.xcdatamodeld */,
+			);
+			path = DataModel;
+			sourceTree = "<group>";
+		};
+		6B6AAB7327BF0DC4000AA161 = {
+			isa = PBXGroup;
+			children = (
+				6B6AAB7E27BF0DC4000AA161 /* NeverForget */,
+				6B6AAB7D27BF0DC4000AA161 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6B6AAB7D27BF0DC4000AA161 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6B6AAB7C27BF0DC4000AA161 /* NeverForget.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6B6AAB7E27BF0DC4000AA161 /* NeverForget */ = {
+			isa = PBXGroup;
+			children = (
+				6B6AAB7F27BF0DC4000AA161 /* NeverForgetApp.swift */,
+				6BDCFE8427BF80370004F0E2 /* Views */,
+				6BDCFE8327BF80320004F0E2 /* Helpers */,
+				6BBF6FE327C0D000007605AB /* View Model */,
+				6BBF6FE227C0CFF6007605AB /* Models */,
+				6B6AAB8327BF0DC5000AA161 /* Assets.xcassets */,
+				6B6AAB8527BF0DC5000AA161 /* Preview Content */,
+			);
+			path = NeverForget;
+			sourceTree = "<group>";
+		};
+		6B6AAB8527BF0DC5000AA161 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				6B6AAB8627BF0DC5000AA161 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		6BBF6FE227C0CFF6007605AB /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				6B3B62C527C081A3007960E5 /* Location.swift */,
+				6B4921C027BF14B400FF9BD0 /* DataModel */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		6BBF6FE327C0D000007605AB /* View Model */ = {
+			isa = PBXGroup;
+			children = (
+				6BBF6FE027C0BAF2007605AB /* PersonViewModel.swift */,
+			);
+			path = "View Model";
+			sourceTree = "<group>";
+		};
+		6BBF6FE427C0D00E007605AB /* Sheets */ = {
+			isa = PBXGroup;
+			children = (
+				6B6AAB9127BF0F8F000AA161 /* AddPersonSheet.swift */,
+				6B3B62C127C07D06007960E5 /* EditPersonSheet.swift */,
+				6BDCFE7927BF1EBB0004F0E2 /* ImagePicker.swift */,
+				6B3B62C327C07DE0007960E5 /* MapView.swift */,
+			);
+			path = Sheets;
+			sourceTree = "<group>";
+		};
+		6BDCFE8327BF80320004F0E2 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				6BDCFE7B27BF2B840004F0E2 /* FileManager-DocumentsDirectory.swift */,
+				6BDCFE8127BF80010004F0E2 /* LocationFetcher.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		6BDCFE8427BF80370004F0E2 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				6B6AAB8127BF0DC4000AA161 /* ContentView.swift */,
+				6BDCFE7F27BF2E980004F0E2 /* UserDetailView.swift */,
+				6BBF6FE427C0D00E007605AB /* Sheets */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6B6AAB7B27BF0DC4000AA161 /* NeverForget */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6B6AAB8A27BF0DC5000AA161 /* Build configuration list for PBXNativeTarget "NeverForget" */;
+			buildPhases = (
+				6B6AAB7827BF0DC4000AA161 /* Sources */,
+				6B6AAB7927BF0DC4000AA161 /* Frameworks */,
+				6B6AAB7A27BF0DC4000AA161 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NeverForget;
+			productName = NeverForget;
+			productReference = 6B6AAB7C27BF0DC4000AA161 /* NeverForget.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6B6AAB7427BF0DC4000AA161 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1320;
+				LastUpgradeCheck = 1320;
+				TargetAttributes = {
+					6B6AAB7B27BF0DC4000AA161 = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+				};
+			};
+			buildConfigurationList = 6B6AAB7727BF0DC4000AA161 /* Build configuration list for PBXProject "NeverForget" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6B6AAB7327BF0DC4000AA161;
+			productRefGroup = 6B6AAB7D27BF0DC4000AA161 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6B6AAB7B27BF0DC4000AA161 /* NeverForget */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6B6AAB7A27BF0DC4000AA161 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6B6AAB8727BF0DC5000AA161 /* Preview Assets.xcassets in Resources */,
+				6B6AAB8427BF0DC5000AA161 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6B6AAB7827BF0DC4000AA161 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6BDCFE7C27BF2B840004F0E2 /* FileManager-DocumentsDirectory.swift in Sources */,
+				6B4921BB27BF148300FF9BD0 /* PeopleDataModel.xcdatamodeld in Sources */,
+				6B4921BE27BF14B100FF9BD0 /* Person+CoreDataClass.swift in Sources */,
+				6BDCFE7627BF15540004F0E2 /* DataController.swift in Sources */,
+				6B3B62C427C07DE0007960E5 /* MapView.swift in Sources */,
+				6BDCFE8227BF80010004F0E2 /* LocationFetcher.swift in Sources */,
+				6BBF6FE127C0BAF2007605AB /* PersonViewModel.swift in Sources */,
+				6B3B62C627C081A3007960E5 /* Location.swift in Sources */,
+				6B6AAB8227BF0DC4000AA161 /* ContentView.swift in Sources */,
+				6B3B62C227C07D06007960E5 /* EditPersonSheet.swift in Sources */,
+				6BDCFE7A27BF1EBB0004F0E2 /* ImagePicker.swift in Sources */,
+				6B6AAB8027BF0DC4000AA161 /* NeverForgetApp.swift in Sources */,
+				6BDCFE8827BF82790004F0E2 /* Person+CoreDataProperties.swift in Sources */,
+				6BDCFE8027BF2E980004F0E2 /* UserDetailView.swift in Sources */,
+				6B6AAB9227BF0F8F000AA161 /* AddPersonSheet.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		6B6AAB8827BF0DC5000AA161 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		6B6AAB8927BF0DC5000AA161 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6B6AAB8B27BF0DC5000AA161 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"NeverForget/Preview Content\"";
+				DEVELOPMENT_TEAM = TSKA2XAG4K;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = NeverForget/Info.plist;
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "Allows you to store the location of a new person.";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Allows you to store the location of a new person.";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Dante-Cesa.NeverForget";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6B6AAB8C27BF0DC5000AA161 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"NeverForget/Preview Content\"";
+				DEVELOPMENT_TEAM = TSKA2XAG4K;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = NeverForget/Info.plist;
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "Allows you to store the location of a new person.";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Allows you to store the location of a new person.";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Dante-Cesa.NeverForget";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6B6AAB7727BF0DC4000AA161 /* Build configuration list for PBXProject "NeverForget" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6B6AAB8827BF0DC5000AA161 /* Debug */,
+				6B6AAB8927BF0DC5000AA161 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6B6AAB8A27BF0DC5000AA161 /* Build configuration list for PBXNativeTarget "NeverForget" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6B6AAB8B27BF0DC5000AA161 /* Debug */,
+				6B6AAB8C27BF0DC5000AA161 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		6B4921B927BF148300FF9BD0 /* PeopleDataModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				6B4921BA27BF148300FF9BD0 /* PeopleDataModel.xcdatamodel */,
+			);
+			currentVersion = 6B4921BA27BF148300FF9BD0 /* PeopleDataModel.xcdatamodel */;
+			path = PeopleDataModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 6B6AAB7427BF0DC4000AA161 /* Project object */;
+}
